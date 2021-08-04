@@ -9,14 +9,15 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>Hello World!</h1>
+                                <h1>Hello Oah'u!</h1>
+                                <h2>Random Text</h2>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
                 <Navbar dark>
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/img/oahu-road.jpg" height="30" width="30" alt="Hero"/></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/oahu-road.jpg" height="30" width="30" alt="Hero"/></NavbarBrand>
                     </div>
                 </Navbar>
                 <Nav navbar>
