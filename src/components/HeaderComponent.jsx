@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink } from 'reactstrap';
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-    }
-    
-
     render() {
         return (
             <>
