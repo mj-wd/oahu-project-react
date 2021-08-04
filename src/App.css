@@ -41,9 +41,15 @@
 /* midnightblue */
   color: rgb(25, 25, 112);
   /* retro sunset, dudes! */
-  background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 66, 108))
+  background-image: linear-gradient(rgb(255, 166, 0), rgb(255, 66, 108));
+  /* position: fixed; */
+  width: 100%;
 }
 
 .btn {
   color: rgb(25, 25, 112);
+}
+
+.p {
+  color: black !important;
 }
