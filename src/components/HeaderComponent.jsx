@@ -40,32 +40,32 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/home">
+                                    <NavLink className="nav-link text-dark" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/Beaches">
+                                    <NavLink className="nav-link text-dark" to="/Beaches">
                                         <i className="fa fa-list fa-lg" /> Beaches
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/Culture">
+                                    <NavLink className="nav-link text-dark" to="/Culture">
                                         <i className="fa fa-address-card fa-lg" /> Culture
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/Geography">
+                                    <NavLink className="nav-link text-dark" to="/Geography">
                                         <i className="fa fa-address-card fa-lg" /> Geography
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/Restaurants">
+                                    <NavLink className="nav-link text-dark" to="/Restaurants">
                                         <i className="fa fa-info fa-lg" /> Restaurants
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/Shopping">
+                                    <NavLink className="nav-link text-dark" to="/Shopping">
                                         <i className="fa fa-address-card fa-lg" /> Shopping
                                     </NavLink>
                                 </NavItem>
