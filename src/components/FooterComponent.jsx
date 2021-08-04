@@ -3,7 +3,13 @@ import React from 'react';
 
 function Footer(props) {
     return (
-        <footer className="site-footer">
+        <footer 
+            className="site-footer"
+            // style={{
+            //     backgroundColor: '#61daf',
+            //     color: 'white',
+            // }}
+            >
             <div className="container">
                 <div className="row">             
                     <div className="col-4 col-sm-2 offset-1">

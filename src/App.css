@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.site-footer {
+/* midnightblue */
+  color: rgb(25,25,112);
+  /* powderblue */
+  background-color: rgb(176,224,230)
+}
