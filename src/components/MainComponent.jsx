@@ -5,13 +5,13 @@ import Footer from './FooterComponent';
 
 class Main extends Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         category = CATEGORY,
-    //         landmark = LANDMARK;
-    //     };
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            // category = CATEGORY,
+            // landmark = LANDMARK;
+        };
+    }
 
     render() {
         return (
@@ -26,5 +26,13 @@ class Main extends Component {
 
 
 }
+
+const mapStateToProps = state => {
+    return {
+        campsites: state.campsites,
+
+    }
+}
+
 
 export default Main;

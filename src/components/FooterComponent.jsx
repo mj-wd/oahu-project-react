@@ -32,7 +32,7 @@ function Footer(props) {
                 </div>
             </div>
             <div className="container">
-                <p>Fun Facts: Oʻahu's nickname is the Gathering Place and it is also known as the County of Honolulu.</p>
+                <p>Fun Facts: Oʻahu's nickname is the Gathering Place and is the  the most populous of the islands.</p>
             </div>
         </footer>
     );
