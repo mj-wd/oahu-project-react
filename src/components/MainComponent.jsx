@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Modal1 from './ModalComponent'
+import HomeModal from './HomeModal'
 
 class Main extends Component {
 
@@ -17,22 +17,11 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <Modal1/>
+                <HomeModal/>
                 <Footer />
             </div>
         );
     
     }
-
-
 }
-
-const mapStateToProps = state => {
-    return {
-        campsites: state.campsites,
-
-    }
-}
-
-
 export default Main;

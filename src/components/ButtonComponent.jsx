@@ -1,10 +1,26 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 
 
-const Button = (props) => {
+const RenderHomeCard = ({homeCard, toggler}) => {
     return(
-        <div key={campsite.id} className="col-md-5 m-1">
-        <RenderDirectoryItem campsite={campsite} />
-        </div>
+        <Button outline onClick={toggler}><img src={homeCard.image} style={{width:500,height:500}}/></Button>
     );
 };
+
+
+function RenderButton({toggler, homeCards}) {
+
+    const renderButton = homeCards.map(homeCard => {
+        return (
+            <RenderHomeCard  key={homeCard.id} homeCard={homeCard} toggler={toggler} />
+        );
+    });
+        return (
+            <div>
+                {renderButton}
+            </div>
+        );
+}
+
+export default RenderButton;

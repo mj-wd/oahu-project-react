@@ -13,4 +13,33 @@ export const HOMECARDS = [
         description: "Italian restaurant",
         image: "/assets/images/ricados.jpg",
     },
+    {
+        id: 2,
+        category: "culture",
+        name: "Hula Dancers",
+        description: "3 Hula Dancers",
+        image: "/assets/images/hula.jpg",
+    },
+    {
+        id: 3,
+        category: "shopping",
+        name: "Ala Moana",
+        description: "Small part of Ala Moana",
+        image: "/assets/images/alamoana.jpg",
+    },
+    {
+        id: 4,
+        category: "Geography",
+        name: "Oahu map",
+        description: "Oahu geography",
+        image: "/assets/images/oahu_geo.jpg",
+    },
+    {
+        id: 2,
+        category: "restaurants",
+        name: "Ricados",
+        description: "",
+        image: "/assets/images/ricados.jpg",
+    },
+    
 ];
