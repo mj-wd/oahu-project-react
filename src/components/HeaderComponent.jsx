@@ -33,7 +33,6 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    <Modal1></Modal1>
                 </Jumbotron>
             </>
         );
