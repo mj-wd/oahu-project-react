@@ -21,6 +21,6 @@ export const BEACHES = [
         location: "east",
         coordinates: 21.393 -157.715,
         description: " Lanikai also offers beachgoers the full range of water sports, both on top of and under the water. You can sail, windsurf, sea kayak, and snorkel. Kayakers can even paddle out to small uninhabited islands about a mile offshore. The water is warm, clear, and gentle (it's protected by an offshore reef), and the sand is white and very fine. (loveoahu.org)",
-        image: "/assets/images/yokohama-bay.jpg",
+        image: "/assets/images/lanikai-beach.jpg",
     },
 ];
