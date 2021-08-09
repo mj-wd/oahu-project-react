@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, CardImg , Card } from 'reactstrap';
+import { HOMECARDS } from '../shared/home';
 
 class Modal1 extends Component {
     constructor(props){
@@ -20,7 +21,9 @@ class Modal1 extends Component {
     render(){
         return(
             <>
-            <Button outline onClick={this.toggleModal}>Open</Button>
+            <Card>
+                <CardImg outline onClick={this.toggleModal}src={HOMECARDS[0].image}>Open</CardImg>
+            </Card>
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader>
                     <ModalBody>
