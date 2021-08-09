@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { MODALS } from '../shared/modals';
 // import { Link } from 'react-router-dom';
 
 // toggleModal() {
@@ -11,16 +12,14 @@ import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } 
 function Home({campsite}) {
     return (
         <Card>
-        <ul className="list-unstyled">
-            <li>Beaches</li>
-            <Link>
-                <img src="https://www.gohawaii.com/sites/default/files/styles/image_gallery_bg_xl/public/hero-unit-images/HTA_00985.jpg?itok=1yuLGK2a" style={{width:300,height:300}} alt="album art" />
-            </Link>
-            <li>Culture</li>
-            <li>Geography</li>
-            <li>Restaurants</li>
-            <li>Shopping</li>
-        </ul>
+            <ul className="list-unstyled">
+                <li>Beaches</li>
+                    <CardImg src={MODALS[0].image} />
+                <li>Culture</li>
+                <li>Geography</li>
+                <li>Restaurants</li>
+                <li>Shopping</li>
+            </ul>
             {/* <Link to={`/directory/${campsite.id}`}> */}
                 {/* <CardImg width="100%" src={"public\assets\images/oahu-road.jpg"} /> */}
                 {/* <CardImgOverlay>
