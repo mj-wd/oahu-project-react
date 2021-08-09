@@ -2,11 +2,11 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 // import { Link } from 'react-router-dom';
 
-toggleModal() {
-    this.setState({
-        isModalOpen: !this.state.isModalOpen
-    });
-}
+// toggleModal() {
+//     this.setState({
+//         isModalOpen: !this.state.isModalOpen
+//     });
+// }
 
 function Home({campsite}) {
     return (

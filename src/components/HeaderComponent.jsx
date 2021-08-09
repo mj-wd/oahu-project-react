@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink, Collapse, NavbarToggler } from 'reactstrap';
-//import Modal1 from './ModalComponent';
+import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink, Collapse, NavbarToggler, Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
+import Modal1 from './ModalComponent';
 
 
 class Header extends Component {
@@ -34,6 +34,7 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
+                    <Modal1></Modal1>
                 </Jumbotron>
                 <Navbar light sticky="top" expand="md" >
                     <div className="container">

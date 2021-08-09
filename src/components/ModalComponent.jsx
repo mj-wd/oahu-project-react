@@ -1,4 +1,4 @@
-/*import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
 
 class Modal1 extends Component {
@@ -24,7 +24,7 @@ class Modal1 extends Component {
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader>
                     <ModalBody>
-
+                        text
                     </ModalBody>
                 </ModalHeader>
             </Modal>
@@ -34,4 +34,4 @@ class Modal1 extends Component {
 
 }
 
-export default Modal1;*/
+export default Modal1;
