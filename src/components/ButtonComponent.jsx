@@ -4,7 +4,7 @@ import { Button } from 'reactstrap';
 
 const RenderHomeCard = ({homeCard, toggler}) => {
     return(
-        <Button outline onClick={toggler}><img src={homeCard.image} style={{width:500,height:500}}/></Button>
+        <Button outline onClick={toggler}><img src={homeCard.hero} style={{width:500,height:500}}/></Button>
     );
 };
 

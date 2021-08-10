@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Button} from 'reactstrap';
 import { HOMECARDS } from '../shared/home';
 import { BEACHES } from '../shared/beaches';
-import RenderButton from './ButtonComponent'
+import { RESTAURANTS } from '../shared/restaurants';
+import RenderButton from './ButtonComponent';
+import RenderModal from './ModalComponent';
 
 class HomeModal extends Component {
     constructor(props){
@@ -11,7 +12,8 @@ class HomeModal extends Component {
         this.state = {
             isModalOpen: false,
             beaches: BEACHES,
-            homeCards: HOMECARDS
+            homeCards: HOMECARDS,
+            restaurants: RESTAURANTS
         };
         this.toggleModal = this.toggleModal.bind(this);
     }
@@ -28,13 +30,7 @@ class HomeModal extends Component {
         return(
             <>
             <RenderButton toggler={this.toggleModal} homeCards={this.state.homeCards} />
-            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                <ModalHeader>
-                    <ModalBody>
-                    <img src={BEACHES[0].image} style={{width:200,height:200}}/>
-                    </ModalBody>
-                </ModalHeader>
-            </Modal>
+            <RenderModal isOpen={this.state.isModalOpen} toggler={this.toggleModal} homeCards={this.state.homeCards}/>
             </>
         );
     };
