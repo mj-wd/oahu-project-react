@@ -1,9 +1,16 @@
 import React from 'react';
 import { BEACHES } from '../shared/beaches';
+import { RESTAURANTS } from '../shared/restaurants'
 import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
 
-const RenderCardModal = ({toggler, isOpen}) => {    
 
+export const initialState = {
+    beaches: BEACHES,
+    restaurants: RESTAURANTS
+}
+
+const onAfterOpen = ({toggler, isOpen, initialState}) => {    
+    // let currentArr = this.initialState;
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
             <ModalHeader>
@@ -14,18 +21,18 @@ const RenderCardModal = ({toggler, isOpen}) => {
             </ModalHeader>
             <ModalBody>
                 <>
-                    {BEACHES.map(id => {
+                    {initialState.map(arr => {
                         return (
-                            <ul key={BEACHES.id}>
+                            <ul key={arr.id}>
                                 <Row>
-                                    <h3>{id.name}</h3>
+                                    <h3>{arr.name}</h3>
                                 </Row>
                                 <Row>
                                     <Col md={6}>                
-                                        {id.image}
+                                        {arr.image}
                                     </Col>
                                     <Col md={6}>       
-                                        <p>{id.description}</p>
+                                        <p>{arr.description}</p>
                                     </Col>
                                 </Row>
                             </ul>
@@ -37,4 +44,4 @@ const RenderCardModal = ({toggler, isOpen}) => {
     );
 };
 
-export default RenderCardModal;  
+export default onAfterOpen;  
