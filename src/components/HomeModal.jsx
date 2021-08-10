@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Button} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { HOMECARDS } from '../shared/home';
 import { BEACHES } from '../shared/beaches';
 import RenderButton from './ButtonComponent'
@@ -22,23 +22,20 @@ class HomeModal extends Component {
         });
     }
 
-
-
     render(){
         return(
             <>
             <RenderButton toggler={this.toggleModal} homeCards={this.state.homeCards} />
-            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                <ModalHeader>
-                    <ModalBody>
-                    <img src={BEACHES[0].image} style={{width:200,height:200}}/>
-                    </ModalBody>
-                </ModalHeader>
-            </Modal>
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader>
+                        <ModalBody>
+                            <img src={BEACHES[0].image} alt={BEACHES[0].alt} style={{width:200,height:200}}/>
+                        </ModalBody>
+                    </ModalHeader>
+                </Modal>
             </>
         );
     };
-
 }
 
 export default HomeModal;
