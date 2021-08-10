@@ -31,4 +31,4 @@ class Modals extends Component {
     };
 }
 
-export default Modals;
+export default Modals;  

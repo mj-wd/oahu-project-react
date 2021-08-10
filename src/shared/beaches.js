@@ -11,7 +11,7 @@ export const BEACHES = [
     {
         id: 1,
         category: "beaches",
-        name: "Waimea Bay",
+        name: "Waimea Bay 2",
         description: "Waimea Bay is one of the most iconic areas on O'ahu's North Shore. In the summer, it offers visitors a beautiful white sand beach to lounge and blue-green water to swim. During winter, it's one of the world's most historical surf breaks. (loveoahu.org)",
         hero: "/assets/images/waimea-bay.jpg",
         alt: "image of a beach",
@@ -20,7 +20,7 @@ export const BEACHES = [
     {
         id: 2,
         category: "beaches",
-        name: "Waimea Bay",
+        name: "Waimea Bay 3",
         description: "Waimea Bay is one of the most iconic areas on O'ahu's North Shore. In the summer, it offers visitors a beautiful white sand beach to lounge and blue-green water to swim. During winter, it's one of the world's most historical surf breaks. (loveoahu.org)",
         hero: "/assets/images/waimea-bay.jpg",
         alt: "image of a beach",

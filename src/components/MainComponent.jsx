@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import HomeModal from './Modals'
+import Modals from './HomeModalImageLinks'
 
 class Main extends Component {
 
@@ -15,7 +15,7 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <HomeModal/>
+                <Modals/>
                 <Footer />
             </div>
         );
