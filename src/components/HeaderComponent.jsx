@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron } from 'reactstrap';
-import Modal1 from './ModalComponent';
+import Modal1 from './HomeModal';
 
 
 class Header extends Component {

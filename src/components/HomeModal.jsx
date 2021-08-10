@@ -1,28 +1,33 @@
-import React, { Component, TouchableOpacity } from 'react';
+import React, { Component } from 'react';
 import { Modal, ModalHeader, ModalBody, Button} from 'reactstrap';
 import { HOMECARDS } from '../shared/home';
 import { BEACHES } from '../shared/beaches';
+import RenderButton from './ButtonComponent'
 
-class Modal1 extends Component {
+class HomeModal extends Component {
     constructor(props){
         super(props);
 
         this.state = {
-            isModalOpen: false
+            isModalOpen: false,
+            beaches: BEACHES,
+            homeCards: HOMECARDS
         };
         this.toggleModal = this.toggleModal.bind(this);
     }
 
-    toggleModal() {
+    toggleModal = () => {
         this.setState({
             isModalOpen: !this.state.isModalOpen
         });
     }
 
+
+
     render(){
         return(
             <>
-            <Button outline><img src={HOMECARDS[0].image} style={{width:500,height:500}} onClick={this.toggleModal}/></Button>
+            <RenderButton toggler={this.toggleModal} homeCards={this.state.homeCards} />
             <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader>
                     <ModalBody>
@@ -36,4 +41,4 @@ class Modal1 extends Component {
 
 }
 
-export default Modal1;
+export default HomeModal;
