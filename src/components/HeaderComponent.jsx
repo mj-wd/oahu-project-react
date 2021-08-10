@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Jumbotron } from 'reactstrap';
-import Modal1 from './HomeModal';
-
+// import Modal1 from './HomeModal';
 
 class Header extends Component {
     constructor(props) {
         super(props);
-
 
         this.state = {
             isNavOpen: false,
@@ -38,8 +36,5 @@ class Header extends Component {
         );
     };
 }
-
-
-
 
 export default Header;
