@@ -29,20 +29,32 @@ import { Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
 //         );
 // }
 
-function RenderModal({toggler, homeCards, isOpen}) {
+function RenderCardModal({toggler, homeCard, isOpen}) {
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler}>
             <ModalHeader>
                 <ModalBody>
-                    <img src={homeCards[0].images[0]} style={{ width: 200, height: 200 }} />
-                    <img src={homeCards[0].images[1]} style={{ width: 200, height: 200 }} />
-                    <img src={homeCards[0].images[2]} style={{ width: 200, height: 200 }} />
+                    <img src={homeCard.id.images} style={{ width: 200, height: 200 }} />
                     <Button onClick={toggler}>X</Button>
                 </ModalBody>
             </ModalHeader>
         </Modal>
     )
 }
+
+function RenderModal({toggler, homeCards, isOpen}) {
+    const renderModal = homeCards.map(homeCard => {
+        return(
+            <RenderCardModal key={homeCard.id} homeCard={homeCard} images={homeCard.images} toggler={toggler} isOpen={isOpen} />
+        );
+    });
+        return(
+            <div>
+                {renderModal}
+            </div>
+        );
+}
+
 
 
 export default RenderModal;
