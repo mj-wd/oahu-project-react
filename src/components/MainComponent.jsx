@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Header from './HeaderComponent';
+import Home from './HomeComponent';
+import Beaches from './BeachesComponent';
+import Traditions from './TraditionsComponent';
+import Restaurants from './RestaurantComponent';
 import Footer from './FooterComponent';
-import Modal from './HomeCardModalComponent';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
+import Shopping from './ShoppingComponent';
+import SiteSeeing from './SightSeeingComponent';
 
 class Main extends Component {
 
@@ -13,16 +18,29 @@ class Main extends Component {
     }
 
     render() {
+
+        const HomePage = () => {
+        return (
+            <Home />
+        );
+    }
+        
         return (
             <div>
-                <Header />
-                <h2>We rounded up our top picks for the island's best things to do.</h2>
-                <h3>Click the pic below to dig into Oahu's best!</h3>
-                <Modal/>
-                <Footer />
+            <Header />
+            <Switch>
+                <Route path='/home' component={HomePage} />
+                <Route exact path='/beaches' component={Beaches} />
+                <Route exact path='/traditions' component={Traditions} />
+                <Route exact path='/sight-seeing' component={SiteSeeing} />
+                <Route exact path='/restaurants' component={Restaurants} />
+                <Route exact path='/shopping' component={Shopping} />
+
+            </Switch>
+            <Footer />
             </div>
         );
-    
     }
 }
-export default withRouter(Main);
+
+export default Main;

@@ -9,4 +9,3 @@ function Beaches(props) {
 }
 
 export default Beaches;
-    

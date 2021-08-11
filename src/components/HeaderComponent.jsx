@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink, Collapse, NavbarToggler } from 'reactstrap';
-
-
+import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, Collapse, NavbarToggler } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -18,8 +17,7 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
-
-
+    
     render() {
         return (
             <React.Fragment>
@@ -46,27 +44,27 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Beaches">
+                                    <NavLink className="nav-link text-primary" to="/beaches">
                                         <i className="fa fa-list fa-lg" /> Beaches
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/tradition">
-                                        <i className="fa fa-address-card fa-lg" /> Tradition
+                                    <NavLink className="nav-link text-primary" to="/traditions">
+                                        <i className="fa fa-address-card fa-lg" /> Traditions
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Sight-Seeing">
+                                    <NavLink className="nav-link text-primary" to="/sight-seeing">
                                         <i className="fa fa-address-card fa-lg" /> Sight-Seeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Restaurants">
+                                    <NavLink className="nav-link text-primary" to="/restaurants">
                                         <i className="fa fa-info fa-lg" /> Restaurants
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Shopping">
+                                    <NavLink className="nav-link text-primary" to="/shopping">
                                         <i className="fa fa-address-card fa-lg" /> Shopping
                                     </NavLink>
                                 </NavItem>
