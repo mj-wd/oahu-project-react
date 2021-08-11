@@ -5,10 +5,10 @@ export const HOMECARDS = [
         name: "Waimea Bay",
         description: "Waimea Bay is one of the most iconic areas on O'ahu's North Shore. In the summer, it offers visitors a beautiful white sand beach to lounge and blue-green water to swim. During winter, it's one of the world's most historical surf breaks. (loveoahu.org)",
         hero: "/assets/images/waimea-bay.jpg",
-        images: [
-             "/assets/images/waimea-bay.jpg",
-             "/assets/images/beach.jpg"
-        ]
+        images: 
+            ["/assets/images/waimea-bay.jpg",
+            "/assets/images/oahu-road.jpg"]
+            
     },
     {
         id: 1,
@@ -16,9 +16,6 @@ export const HOMECARDS = [
         name: "Ricados",
         description: "Italian restaurant",
         hero: "/assets/images/ricados.jpg",
-        images: {
-
-        }
     },
     {
         id: 2,
