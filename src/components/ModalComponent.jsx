@@ -1,11 +1,9 @@
 import React from 'react';
 import { BEACHES } from '../shared/beaches';
-import { RESTAURANTS } from '../shared/restaurants';
-import { HOMECARDS } from '../shared/home';
+import { RESTAURANTS } from '../shared/restaurants'
 import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
 import { Link, Switch, Route, Redirect, withRouter} from 'react-router-dom';
 import { connect } from 'react-redux';
-import { HookMapInterceptor } from 'tapable';
 
 function onAfterOpen({toggler, isOpen, arr}) {    
 
@@ -20,7 +18,7 @@ function onAfterOpen({toggler, isOpen, arr}) {
                 </ModalHeader>
                 <ModalBody>
                     <>
-                        {HOMECARDS.map(arr => {
+                        {BEACHES.map(arr => {
                             return (
                                 <ul key={arr.id}>
                                     <Row>
