@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Modal from './HomeCardModalComponent'
+import Modal from './HomeCardModalComponent';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 
 class Main extends Component {
 
@@ -24,4 +25,4 @@ class Main extends Component {
     
     }
 }
-export default Main;
+export default withRouter(Main);

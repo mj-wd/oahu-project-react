@@ -36,7 +36,7 @@ function onAfterOpen({toggler, isOpen, arr}) {
                     </>
                 </ModalBody>
         </Modal>
-    );
-};
+    )
+}
 
 export default onAfterOpen;

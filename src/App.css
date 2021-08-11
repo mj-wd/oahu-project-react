@@ -46,6 +46,10 @@
   width: 100%;
 }
 
+.jumbotron {
+  background-color:orange;
+}
+
 .btn {
   color: rgb(25, 25, 112);
 }

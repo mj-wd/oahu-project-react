@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink, Collapse, NavbarToggler } from 'reactstrap';
+
+
 
 class Header extends Component {
     constructor(props) {
@@ -20,18 +22,60 @@ class Header extends Component {
 
     render() {
         return (
-            <>
+            <React.Fragment>
                 <Jumbotron>
                     <div className="container">
                         <div className="row">
                             <div className="col">
                                 <h1>Hello Oah'u!</h1>
-                                <h2>Random Text</h2>
+                                <h2>Welcome To Our Website</h2>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
-            </>
+
+                <Navbar light sticky="top" expand="md">
+                    <div className="container">
+                        <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/home">
+                                        <i className="fa fa-home fa-lg" /> Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/Beaches">
+                                        <i className="fa fa-list fa-lg" /> Beaches
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/tradition">
+                                        <i className="fa fa-address-card fa-lg" /> Tradition
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/Sight-Seeing">
+                                        <i className="fa fa-address-card fa-lg" /> Sight-Seeing
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/Restaurants">
+                                        <i className="fa fa-info fa-lg" /> Restaurants
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link text-primary" to="/Shopping">
+                                        <i className="fa fa-address-card fa-lg" /> Shopping
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
+                </Navbar>
+            </React.Fragment>
+
         );
     };
 }
