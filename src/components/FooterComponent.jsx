@@ -31,7 +31,7 @@ function Footer(props) {
                 </div>
             </div>
             <div className="container">
-                <p>Fun Facts: Oʻahu's nickname is the Gathering Place and is the  the most populous of the islands.</p>
+                <p>Fun Facts: Oʻahu's nickname is the Gathering Place and is the the most populous of Hawaii's islands.</p>
             </div>
         </footer>
     );
