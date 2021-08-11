@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { HOMECARDS } from '../shared/home';
-import RenderButton from './ButtonComponent';
+import { HOMECARD } from '../shared/home';
+import RenderButton from './HomeCardButtonComponent';
 import RenderModal from './ModalComponent';
 
-class Modals extends Component {
+class Modal extends Component {
     
     constructor(props){
         super(props);
 
         this.state = {
             isModalOpen: false,
-            homeCards: HOMECARDS,
+            homeCards: HOMECARD,
         };
         this.toggleModal = this.toggleModal.bind(this);
     }
@@ -31,4 +31,4 @@ class Modals extends Component {
     };
 }
 
-export default Modals;  
+export default Modal;  

@@ -1,4 +1,4 @@
-export const HOMECARDS = [
+export const HOMECARD = [
     {
         id: 0,
         category: "beaches",
@@ -7,34 +7,5 @@ export const HOMECARDS = [
         hero: "/assets/images/waimea-bay.jpg",
         alt: "image of a beach",
         image: <img className="beach" src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="beach" />
-    },
-    {
-        id: 1,
-        category: "restaurants",
-        name: "Ricados",
-        description: "Italian restaurant",
-        hero: "/assets/images/ricados.jpg",
-        image: <img src={"/assets/images/ricados.jpg"} style={{width:300,height:300}} alt="ricados" />
-    },
-    {
-        id: 2,
-        category: "culture",
-        name: "Hula Dancers",
-        description: "3 Hula Dancers",
-        hero: "/assets/images/hula.jpg",
-    },
-    {
-        id: 3,
-        category: "shopping",
-        name: "Ala Moana",
-        description: "Small part of Ala Moana",
-        hero: "/assets/images/alamoana.jpg",
-    },
-    {
-        id: 4,
-        category: "Geography",
-        name: "Oahu map",
-        description: "Oahu geography",
-        hero: "/assets/images/oahu_geo.jpg",
     },    
 ];
