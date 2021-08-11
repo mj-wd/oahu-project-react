@@ -1,61 +1,40 @@
 import React from 'react';
-import { Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
+import { TOPATTRACTIONS } from '../shared/topAttractions';
+import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
 
+function onAfterOpen({toggler, isOpen, arr}) {    
 
-
-// const RenderCardModal = ({toggler, images, homeCard, isOpen}) => {
-//     return(
-//         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler}>
-//             <ModalHeader>
-//                 <ModalBody>
-//                     <img src={homeCard[0].images[0]} style={{width:200,height:200}}/>
-//                     <Button onClick={toggler}>X</Button>
-//                 </ModalBody>
-//             </ModalHeader>
-//         </Modal>
-//     );
-// };
-
-// function RenderModal({toggler, homeCards, isOpen}) {
-//     const renderModal = homeCards.map(homeCard => {
-//         return(
-//             <RenderCardModal key={homeCard.id} homeCard={homeCard} images={homeCard.images} toggler={toggler} isOpen={isOpen} />
-//         );
-//     });
-//         return(
-//             <div>
-//                 {renderModal}
-//             </div>
-//         );
-// }
-
-function RenderCardModal({toggler, homeCard, isOpen}) {
     return(
-        <Modal className="modal-lg" isOpen={isOpen} toggler={toggler}>
-            <ModalHeader>
+        <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
+                <ModalHeader>
+                    <Button onClick={toggler}>
+                        X Close
+                    </Button>
+                    <h2>Our Recommendations</h2>
+                </ModalHeader>
                 <ModalBody>
-                    <img src={homeCard.id.images} style={{ width: 200, height: 200 }} />
-                    <Button onClick={toggler}>X</Button>
+                    <>
+                        {TOPATTRACTIONS.map(arr => {
+                            return (
+                                <ul key={arr.id}>
+                                    <Row>
+                                        <h3>{arr.name}</h3>
+                                    </Row>
+                                    <Row>
+                                        <Col md={6}>                
+                                            {arr.image}
+                                        </Col>
+                                        <Col md={6}>       
+                                            <p>{arr.description}</p>
+                                        </Col>
+                                    </Row>
+                                </ul>
+                            )
+                        })}
+                    </>
                 </ModalBody>
-            </ModalHeader>
         </Modal>
     )
 }
 
-function RenderModal({toggler, homeCards, isOpen}) {
-    const renderModal = homeCards.map(homeCard => {
-        return(
-            <RenderCardModal key={homeCard.id} homeCard={homeCard} images={homeCard.images} toggler={toggler} isOpen={isOpen} />
-        );
-    });
-        return(
-            <div>
-                {renderModal}
-            </div>
-        );
-}
-
-
-
-export default RenderModal;
-
+export default onAfterOpen;

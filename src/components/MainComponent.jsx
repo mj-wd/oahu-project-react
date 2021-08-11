@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import HomeModal from './HomeModal'
+import Modal from './HomeCardModalComponent'
 
 class Main extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            // category = CATEGORY,
-            // landmark = LANDMARK;
         };
     }
 
@@ -17,7 +15,7 @@ class Main extends Component {
         return (
             <div>
                 <Header />
-                <HomeModal/>
+                <Modal/>
                 <Footer />
             </div>
         );
