@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Modal from './HomeCardModalComponent';
+import Beaches from './BeachesComponent';
 
 
 class Router extends Component {
@@ -19,7 +20,7 @@ class Router extends Component {
                 <Header />
                 <Switch>
                     <Route path='/main' component={MainComponent} />
-                    <Route path='/beaches' component={BeachesComponent} />
+                    <Route path='/beaches' component={Beaches} />
                     <Redirect to='/main' />
                 </Switch>
                 <Modal />
