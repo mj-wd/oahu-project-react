@@ -2,19 +2,14 @@ import React from 'react';
 import { BEACHES } from '../shared/beaches';
 import { RESTAURANTS } from '../shared/restaurants'
 import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route, Redirect, withRouter} from 'react-router-dom';
+import { connect } from 'react-redux';
 
-
-// export const initialState = {
-//     beaches: BEACHES,
-//     restaurants: RESTAURANTS
-// }
-
-function onAfterOpen({toggler, isOpen}) {    
+function onAfterOpen({toggler, isOpen, arr}) {    
 
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
-            {/* <Link to={`/beaches/${BEACHES.id}`}> */}
+            <Link to={`${BEACHES.id}`}>
                 <ModalHeader>
                     <Button onClick={toggler}>
                         X Close
@@ -42,9 +37,9 @@ function onAfterOpen({toggler, isOpen}) {
                         })}
                     </>
                 </ModalBody>
-            {/* </Link> */}
+            </Link>
         </Modal>
     );
 };
 
-export default onAfterOpen;  
+export default withRouter(connect(onAfterOpen));
