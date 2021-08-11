@@ -28,7 +28,7 @@ class Header extends Component {
                         <div className="row">
                             <div className="col">
                                 <h1>Hello Oah'u!</h1>
-                                <h2>Random Text</h2>
+                                <h2>Welcome To Our Website</h2>
                             </div>
                         </div>
                     </div>
@@ -51,13 +51,13 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Culture">
-                                        <i className="fa fa-address-card fa-lg" /> Culture
+                                    <NavLink className="nav-link text-primary" to="/tradition">
+                                        <i className="fa fa-address-card fa-lg" /> Tradition
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Geography">
-                                        <i className="fa fa-address-card fa-lg" /> Geography
+                                    <NavLink className="nav-link text-primary" to="/Sight-Seeing">
+                                        <i className="fa fa-address-card fa-lg" /> Sight-Seeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
