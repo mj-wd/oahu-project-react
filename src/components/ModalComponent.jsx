@@ -9,7 +9,7 @@ function onAfterOpen({toggler, isOpen, arr}) {
 
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
-            <Link to={`${BEACHES.id}`}>
+            {/* <Link to={`${BEACHES.id}`}> */}
                 <ModalHeader>
                     <Button onClick={toggler}>
                         X Close
@@ -37,9 +37,9 @@ function onAfterOpen({toggler, isOpen, arr}) {
                         })}
                     </>
                 </ModalBody>
-            </Link>
+            {/* </Link> */}
         </Modal>
     );
 };
 
-export default withRouter(connect(onAfterOpen));
+export default onAfterOpen;
