@@ -7,5 +7,5 @@ export const HOMECARD = [
         hero: "/assets/images/waimea-bay.jpg",
         alt: "image of a Waimea Bay",
         image: <img className="beach" src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="beach" />
-    },    
+    },
 ];
