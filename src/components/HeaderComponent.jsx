@@ -32,7 +32,7 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar light sticky="top" expand="md">
+                <Navbar light static="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
