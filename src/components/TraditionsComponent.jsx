@@ -1,11 +1,11 @@
 import React from 'react';
 import { TRADITIONS } from '../shared/traditions';
-import { Row, Col} from 'reactstrap';
+import { Row, Col, Container} from 'reactstrap';
 
 function Traditions() {    
 
     return(
-        <div>
+        <Container>
             <>
                 <h2>Oahu's Top 3 Traditions</h2>
                 {TRADITIONS.map(arr => {
@@ -27,7 +27,7 @@ function Traditions() {
                     )
                 })}
             </>
-        </div>
+        </Container>
     );
 }
 

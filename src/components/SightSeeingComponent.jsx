@@ -1,11 +1,11 @@
 import React from 'react';
 import { SIGHTSEEING } from '../shared/sightseeing';
-import { Row, Col} from 'reactstrap';
+import { Row, Col, Container} from 'reactstrap';
 
 function Siteseeing() {    
 
     return(
-        <div>
+        <Container>
             <>
                 <h2>Oahu's Top 3 Spots to Peep</h2>
                 {SIGHTSEEING.map(arr => {
@@ -27,7 +27,7 @@ function Siteseeing() {
                     )
                 })}
             </>
-        </div>
+        </Container>
     );
 }
 

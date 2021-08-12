@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Container } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';

@@ -1,11 +1,11 @@
 import React from 'react';
 import { RESTAURANTS } from '../shared/restaurants';
-import { Row, Col} from 'reactstrap';
+import { Row, Col, Container} from 'reactstrap';
 
 function Restaurants() {    
 
     return(
-        <div>
+        <Container>
             <>
                 <h2>Oahu's Top 3 Restaurants</h2>
                 {RESTAURANTS.map(arr => {
@@ -27,7 +27,7 @@ function Restaurants() {
                     )
                 })}
             </>
-        </div>
+        </Container>
     );
 }
 
