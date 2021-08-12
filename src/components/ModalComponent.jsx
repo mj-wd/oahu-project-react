@@ -2,7 +2,7 @@ import React from 'react';
 import { TOPATTRACTIONS } from '../shared/topAttractions';
 import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
 
-function onAfterOpen({toggler, isOpen, arr}) {    
+function onAfterOpen({toggler, isOpen}) {    
 
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
