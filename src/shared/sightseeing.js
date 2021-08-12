@@ -4,7 +4,8 @@ export const SIGHTSEEING = [
         category: "Siteseeing",
         name: "Siteseeing",
         description: "Siteseeing",
-        citation: "Siteseeing",
+        source: "best-of-oahu.com",
+        citationLink: "https://www.best-of-oahu.com/waimea-bay.html",        
         alt: "Siteseeing",
         image: <img src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="Waimea Bay" />
     },
@@ -13,7 +14,8 @@ export const SIGHTSEEING = [
         category: "Siteseeing",
         name: "Siteseeing",
         description: "Siteseeing",
-        citation: "Siteseeing",
+        source: "best-of-oahu.com",
+        citationLink: "https://www.best-of-oahu.com/waimea-bay.html",        
         alt: "Siteseeing",
         image: <img src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="Waimea Bay" />
     },
@@ -22,7 +24,8 @@ export const SIGHTSEEING = [
         category: "Siteseeing",
         name: "Siteseeing",
         description: "Siteseeing",
-        citation: "Siteseeing",
+        source: "best-of-oahu.com",
+        citationLink: "https://www.best-of-oahu.com/waimea-bay.html",        
         alt: "Siteseeing",
         image: <img src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="Waimea Bay" />
     }, 
