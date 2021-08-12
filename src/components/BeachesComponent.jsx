@@ -2,7 +2,7 @@ import React from 'react';
 import { BEACHES } from '../shared/beaches';
 import { Row, Col} from 'reactstrap';
 
-function Beaches() {    
+function Beaches() { 
 
     return(
         <div>
@@ -18,9 +18,9 @@ function Beaches() {
                                 <Col lg={6}>                
                                     {arr.image}
                                 </Col>
-                                <Col lg={6}>       
+                                <Col lg={6}>
                                     <p><q>{arr.description}</q></p>
-                                    <p>source:&nbsp;{arr.citation}</p>
+                                    <a href={arr.citationLink} target='_blank' rel="noreferrer">source: {arr.source}</a>
                                 </Col>
                             </Row>
                         </ul>

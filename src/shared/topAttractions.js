@@ -3,9 +3,9 @@ export const TOPATTRACTIONS = [
         id: 0,
         category: "Beach",
         name: "Waimea Bay",
-        description: "Waimea Bay is one of the most iconic areas on O'ahu's North Shore. In the summer, it offers visitors a beautiful white sand beach to lounge and blue-green water to swim. During winter, it's one of the world's most historical surf breaks.",
-        citation: "loveoahu.org",
-        alt: "image of a beach",
+        description: "The towering North Shore waves start here in Waimea Bay.  The winter swells that roll into the famous Oahu North Shore beaches, generally top out at Waimea Beach Park , on the right hand side of the bay. Surfing the Bay, along with Sunset Beach and the Banzai Pipeline, is considered almost a pilgrimage among many pro-surfers that fly in from all around the world to partake in the daring action. The fun generally begins when the National Weather Service issues high surf warnings for the North Shore.  Waimea Beach Park is located just past Haleiwa Beach, and across from Waimea Falls Park",
+        citation: "https://www.best-of-oahu.com/waimea-bay.html",
+        alt: "Waimea Bay",
         image: <img src={"/assets/images/waimea-bay.jpg"} style={{width:300,height:300}} alt="Waimea Bay" />
     },
         {
