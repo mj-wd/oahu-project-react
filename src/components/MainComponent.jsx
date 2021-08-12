@@ -7,7 +7,7 @@ import Traditions from './TraditionsComponent';
 import Restaurants from './RestaurantComponent';
 import Footer from './FooterComponent';
 import Shopping from './ShoppingComponent';
-import SiteSeeing from './SightSeeingComponent';
+import Siteseeing from './SightseeingComponent';
 
 class Main extends Component {
 
@@ -32,10 +32,9 @@ class Main extends Component {
                 <Route path='/home' component={HomePage} />
                 <Route exact path='/beaches' component={Beaches} />
                 <Route exact path='/traditions' component={Traditions} />
-                <Route exact path='/sight-seeing' component={SiteSeeing} />
+                <Route exact path='/sightseeing' component={Siteseeing} />
                 <Route exact path='/restaurants' component={Restaurants} />
                 <Route exact path='/shopping' component={Shopping} />
-
             </Switch>
             <Footer />
             </div>

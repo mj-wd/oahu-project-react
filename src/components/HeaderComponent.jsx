@@ -54,8 +54,8 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/sight-seeing">
-                                        <i className="fa fa-address-card fa-lg" /> Sight-Seeing
+                                    <NavLink className="nav-link text-primary" to="/sightseeing">
+                                        <i className="fa fa-address-card fa-lg" /> Sightseeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
