@@ -2,7 +2,7 @@ import React from 'react';
 import { TOPATTRACTIONS } from '../shared/topAttractions';
 import { Modal, ModalHeader, ModalBody, Button, Row, Col} from 'reactstrap';
 
-function onAfterOpen({toggler, isOpen, arr}) {    
+function onAfterOpen({toggler, isOpen}) {    
 
     return(
         <Modal className="modal-lg" isOpen={isOpen} toggler={toggler} >
@@ -17,20 +17,22 @@ function onAfterOpen({toggler, isOpen, arr}) {
                         {TOPATTRACTIONS.map(arr => {
                             return (
                                 <ul key={arr.id}>
-                                    <Row>
-                                        <h3>Best {arr.category}:&nbsp;</h3>
-                                        <h3>{arr.name}</h3>
-                                    </Row>
-                                    <Row>
-                                        <Col lg={6}>                
-                                            {arr.image}
-                                        </Col>
-                                        <Col lg={6}>       
-                                            <p><q>{arr.description}</q></p>
-                                            <p>source:&nbsp;{arr.citation}</p>
-                                        </Col>
-                                    </Row>
-                                </ul>
+                                <Row>
+                                    <h3>Best {arr.category}</h3>
+                                </Row>
+                                <Row>
+                                    <h3>{arr.name}</h3>
+                                </Row>
+                                <Row>
+                                    <Col lg={6}>                
+                                        {arr.image}
+                                    </Col>
+                                    <Col lg={6}>
+                                        <p><q>{arr.description}</q></p>
+                                        <a href={arr.citationLink} target='_blank' rel="noreferrer">source: {arr.source}</a>
+                                    </Col>
+                                </Row>
+                            </ul>
                             )
                         })}
                     </>

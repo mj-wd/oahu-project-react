@@ -45,27 +45,27 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/beaches">
-                                        <i className="fa fa-list fa-lg" /> Beaches
+                                        <i className="fa fa-sun-o  fa-lg" /> Beaches
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/traditions">
-                                        <i className="fa fa-address-card fa-lg" /> Traditions
+                                        <i className="fa fa-clock-o  fa-lg" /> Traditions
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/sight-seeing">
-                                        <i className="fa fa-address-card fa-lg" /> Sight-Seeing
+                                    <NavLink className="nav-link text-primary" to="/sightseeing">
+                                        <i className="fa fa-binoculars fa-lg" /> Sightseeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/restaurants">
-                                        <i className="fa fa-info fa-lg" /> Restaurants
+                                        <i className="fa fa-cutlery fa-lg" /> Restaurants
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/shopping">
-                                        <i className="fa fa-address-card fa-lg" /> Shopping
+                                        <i className="fa fa-cart-plus fa-lg" /> Shopping
                                     </NavLink>
                                 </NavItem>
                             </Nav>
