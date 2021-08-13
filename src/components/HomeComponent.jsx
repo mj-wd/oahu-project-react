@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Modal from './HomeCardModalComponent';
 
+
 class Home extends Component {
 
     constructor(props) {

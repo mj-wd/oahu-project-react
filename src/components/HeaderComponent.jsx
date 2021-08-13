@@ -17,7 +17,7 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
-    
+
     render() {
         return (
             <React.Fragment>
@@ -31,13 +31,12 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-
-                <Navbar light static="top" expand="md">
+                <Navbar light static="top" expand="md" >
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav navbar className="m-auto">
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/home">
                                         <i className="fa fa-home fa-lg" /> Home
