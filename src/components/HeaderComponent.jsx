@@ -44,17 +44,17 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/beaches">
-                                        <i className="fa fa-sun-o  fa-lg" /> Beaches
+                                        <i className="fa fa-cloud  fa-lg" /> Beaches
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/traditions">
-                                        <i className="fa fa-clock-o  fa-lg" /> Traditions
+                                        <i className="fa fa-leaf  fa-lg" /> Traditions
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/sightseeing">
-                                        <i className="fa fa-binoculars fa-lg" /> Sightseeing
+                                        <i className="fa fa-map-signs fa-lg" /> Sightseeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -64,7 +64,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link text-primary" to="/shopping">
-                                        <i className="fa fa-cart-plus fa-lg" /> Shopping
+                                        <i className="fa fa-credit-card fa-lg" /> Shopping
                                     </NavLink>
                                 </NavItem>
                             </Nav>
