@@ -29,10 +29,10 @@ class Main extends Component {
             <div>
             <Header />
             <Switch>
-            <Route exact path='/' component={HomePage} />
+                <Route exact path='/home' component={HomePage} />
                 <Route path='/beaches' component={Beaches} />
                 <Route path='/traditions' component={Traditions} />
-                <Route path='/sight-seeing' component={SiteSeeing} />
+                <Route path='/sightseeing' component={SiteSeeing} />
                 <Route path='/restaurants' component={Restaurants} />
                 <Route path='/shopping' component={Shopping} />
             </Switch>
