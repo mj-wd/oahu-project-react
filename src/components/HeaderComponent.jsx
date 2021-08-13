@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, NavLink, Collapse, NavbarToggler } from 'reactstrap';
-
-
+import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, Collapse, NavbarToggler } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
     constructor(props) {
@@ -18,8 +17,7 @@ class Header extends Component {
             isNavOpen: !this.state.isNavOpen
         });
     }
-
-
+    
     render() {
         return (
             <React.Fragment>
@@ -34,7 +32,7 @@ class Header extends Component {
                     </div>
                 </Jumbotron>
 
-                <Navbar light sticky="top" expand="md">
+                <Navbar light static="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
@@ -46,28 +44,28 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Beaches">
-                                        <i className="fa fa-list fa-lg" /> Beaches
+                                    <NavLink className="nav-link text-primary" to="/beaches">
+                                        <i className="fa fa-sun-o  fa-lg" /> Beaches
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/tradition">
-                                        <i className="fa fa-address-card fa-lg" /> Tradition
+                                    <NavLink className="nav-link text-primary" to="/traditions">
+                                        <i className="fa fa-clock-o  fa-lg" /> Traditions
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Sight-Seeing">
-                                        <i className="fa fa-address-card fa-lg" /> Sight-Seeing
+                                    <NavLink className="nav-link text-primary" to="/sightseeing">
+                                        <i className="fa fa-binoculars fa-lg" /> Sightseeing
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Restaurants">
-                                        <i className="fa fa-info fa-lg" /> Restaurants
+                                    <NavLink className="nav-link text-primary" to="/restaurants">
+                                        <i className="fa fa-cutlery fa-lg" /> Restaurants
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link text-primary" to="/Shopping">
-                                        <i className="fa fa-address-card fa-lg" /> Shopping
+                                    <NavLink className="nav-link text-primary" to="/shopping">
+                                        <i className="fa fa-cart-plus fa-lg" /> Shopping
                                     </NavLink>
                                 </NavItem>
                             </Nav>

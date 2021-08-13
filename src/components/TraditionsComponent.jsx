@@ -1,14 +1,14 @@
 import React from 'react';
-import { BEACHES } from '../shared/beaches';
+import { TRADITIONS } from '../shared/traditions';
 import { Row, Col, Container} from 'reactstrap';
 
-function Beaches() { 
+function Traditions() {    
 
     return(
         <Container>
             <>
-                <h2>Oahu's Top 3 Beaches</h2>
-                {BEACHES.map(arr => {
+                <h2>Oahu's Top 3 Traditions</h2>
+                {TRADITIONS.map(arr => {
                     return (
                         <ul key={arr.id}>
                             <Row>
@@ -31,4 +31,4 @@ function Beaches() {
     );
 }
 
-export default Beaches;
+export default Traditions;
