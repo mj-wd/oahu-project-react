@@ -48,6 +48,8 @@
 
 .jumbotron {
   background-color:orange;
+  margin-bottom: 20px;
+  padding:35px;
 }
 
 .btn {
