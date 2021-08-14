@@ -25,7 +25,7 @@ class Header extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <h1>Hi this is an update</h1>
+                                <h1>Welcome to Oah'u</h1>
                                 <h2>Find out about all the great things this island has to offer!</h2>
                                 <img src="/assets/images/icon.png" width="50" height="50" alt="icon" />
                             </div>
