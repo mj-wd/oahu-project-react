@@ -1,4 +1,4 @@
-# Welcome to Oahu
+# Welcome to Oah'u
 ## Find out about all the great things this island has to offer!
 ### This is a website that highlights our favorite things to do on the island.
 
