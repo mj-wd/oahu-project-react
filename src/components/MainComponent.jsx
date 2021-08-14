@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from './HeaderComponent';
 import Home from './HomeComponent';
 import Beaches from './BeachesComponent';
@@ -20,26 +20,27 @@ class Main extends Component {
     render() {
 
         const HomePage = () => {
-        return (
-            <Home />
-        );
-    }
+            return (
+                <Home />
+            );
+        };
         
         return (
             <div>
-            <Header />
-            <Switch>
-                <Route exact path='/home' component={HomePage} />
-                <Route path='/beaches' component={Beaches} />
-                <Route path='/traditions' component={Traditions} />
-                <Route path='/sightseeing' component={SiteSeeing} />
-                <Route path='/restaurants' component={Restaurants} />
-                <Route path='/shopping' component={Shopping} />
-            </Switch>
-            <Footer />
+                <Header />
+                    <Switch>
+                        <Route path='/home' component={HomePage} />
+                        <Route path='/beaches' component={Beaches} />
+                        <Route path='/traditions' component={Traditions} />
+                        <Route path='/sightseeing' component={SiteSeeing} />
+                        <Route path='/restaurants' component={Restaurants} />
+                        <Route path='/shopping' component={Shopping} />
+                        <Redirect to='/home' />
+                    </Switch>
+                <Footer />
             </div>
-                    );
-                }
-            }
+            );
+        }
+    }
             
-            export default Main;
+export default Main;
