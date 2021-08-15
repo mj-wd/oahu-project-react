@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, Navbar, NavbarBrand, NavItem, Jumbotron, Collapse, NavbarToggler } from 'reactstrap';
+import { Container, Nav, Navbar, NavbarBrand, NavItem, Jumbotron, Collapse, NavbarToggler } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -22,7 +22,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <Jumbotron>
-                    <div className="container">
+                    <Container>
                         <div className="row">
                             <div className="col">
                                 <h1>Welcome to Oah'u</h1>
@@ -30,7 +30,7 @@ class Header extends Component {
                                 <img src="/assets/images/icon.png" width="50" height="50" alt="icon" />
                             </div>
                         </div>
-                    </div>
+                    </Container>
                 </Jumbotron>
                 <Navbar light static="top" expand="md" >
                     <div className="container">
